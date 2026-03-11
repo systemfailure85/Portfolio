@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    background: rgba(15, 23, 42, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: #f8fafc;
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s;
+}
+
+#navbar ul li a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section */
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.photo-placeholder {
+    width: 180px;
+    height: 180px;
+    background: #1e293b;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #38bdf8;
+    overflow: hidden;
+    overflow: hidden;
+}
+/*Ajusta a imagem dentro do círculo*/
+.profile-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*corta as bordas sem distorcer o seu rosto */
+    object-position: center; /* Garante que o foco seja o meio da imagem */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Projetos */
+#projetos {
+    padding: 100px 10%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card-projeto {
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: translateY 0.3s;
+    border: 1px solid #334155;
+}
+
+.card-projeto:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    height: 180px;
+    background: #334155;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-info {
+    padding: 1.5rem;
+}
+
+.card-info h3 {
+    margin-bottom: 0.5rem;
+    color: #38bdf8;
+}
+
+.card-info a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 4rem 0;
+    text-align: center;
+    background: #020617;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #38bdf8;
+    margin: 0 10px;
+    text-decoration: none;
+}
